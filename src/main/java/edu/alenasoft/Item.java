@@ -42,16 +42,6 @@ public class Item {
     this.quality = quality;
   }
 
-  public void incrementQuality() {
-    if (this.getQuality() < 50) {
-      this.setQuality(this.getQuality() + 1);
-    }
-  }
-
-  public void decrementSellIn() {
-    this.setSellIn(this.getSellIn() - 1);
-  }
-
   public void updateQuality() {
     System.out.println("Updating quality of " + this.name);
     if (this.qualityUpdater != null) {
