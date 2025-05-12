@@ -5,11 +5,6 @@ import static org.junit.Assert.*;
 import java.util.ArrayList;
 import org.junit.Test;
 
-import edu.alenasoft.items.ItemAgedBrie;
-import edu.alenasoft.items.ItemBackstagePass;
-import edu.alenasoft.items.ItemDexterityVest;
-import edu.alenasoft.items.ItemSulfuraHOR;
-
 public class GildedRoseTest {
 
   @Test
@@ -17,8 +12,7 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 20;
-    //Item item = new Item("+5 Dexterity Vest", 10, inputQuality);
-    Item item = new ItemDexterityVest(10, inputQuality);
+    Item item = new Item("+5 Dexterity Vest", 10, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
@@ -33,8 +27,7 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 20;
-    //Item item = new Item("+5 Dexterity Vest", 0, inputQuality);
-    Item item = new ItemDexterityVest(0, inputQuality);
+    Item item = new Item("+5 Dexterity Vest", 0, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
@@ -49,7 +42,7 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 0;
-    Item item = new ItemDexterityVest( 0, inputQuality);
+    Item item = new Item("+5 Dexterity Vest", 0, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
@@ -64,8 +57,7 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 80;
-    //Item item = new Item("Sulfuras, Hand of Ragnaros", 15, inputQuality);
-    Item item = new ItemSulfuraHOR(15, inputQuality);
+    Item item = new Item("Sulfuras, Hand of Ragnaros", 15, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
@@ -80,8 +72,7 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 50;
-    //Item item = new Item("Aged Brie", 20, inputQuality);
-    Item item = new ItemAgedBrie(20, inputQuality);
+    Item item = new Item("Aged Brie", 20, inputQuality);
 
     // GildedRose.items.add(item);
     // GildedRose.updateQuality();
@@ -96,8 +87,7 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 20;
-    //Item item = new Item("Backstage passes to a TAFKAL80ETC concert", 15, inputQuality);
-    Item item = new ItemBackstagePass(15, inputQuality);
+    Item item = new Item("Backstage passes to a TAFKAL80ETC concert", 15, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
@@ -112,8 +102,7 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 20;
-    //Item item = new Item("Backstage passes to a TAFKAL80ETC concert", 10, inputQuality);
-    Item item = new ItemBackstagePass(10, inputQuality);
+    Item item = new Item("Backstage passes to a TAFKAL80ETC concert", 10, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
@@ -128,8 +117,7 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 20;
-    //Item item = new Item("Backstage passes to a TAFKAL80ETC concert", 5, inputQuality);
-    Item item = new ItemBackstagePass(5, inputQuality);
+    Item item = new Item("Backstage passes to a TAFKAL80ETC concert", 5, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
@@ -144,8 +132,7 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 20;
-    //Item item = new Item("Backstage passes to a TAFKAL80ETC concert", 0, inputQuality);
-    Item item = new ItemBackstagePass(0, inputQuality);
+    Item item = new Item("Backstage passes to a TAFKAL80ETC concert", 0, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();

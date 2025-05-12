@@ -4,12 +4,6 @@ import java.util.ArrayList;
 // import java.util.ArrayList;
 import java.util.List;
 
-import edu.alenasoft.items.ItemAgedBrie;
-import edu.alenasoft.items.ItemBackstagePass;
-import edu.alenasoft.items.ItemConjuredManaCake;
-import edu.alenasoft.items.ItemDexterityVest;
-import edu.alenasoft.items.ItemSulfuraHOR;
-
 public class GildedRose {
 
   public static List<Item> items = null;
@@ -18,16 +12,12 @@ public class GildedRose {
 
     System.out.println("OMGHAI!");
     items = new ArrayList<Item>();
-    // items.add(new Item("+5 Dexterity Vest", 10, 20));
-    items.add(new ItemDexterityVest(10, 20));
-    //items.add(new Item("Aged Brie", 2, 0));
-    items.add(new ItemAgedBrie(2, 0));
+    items.add(new Item("+5 Dexterity Vest", 10, 20));
+    items.add(new Item("Aged Brie", 2, 0));
     // items.add(new Item("Elixir of the Mongoose", 5, 7));
-    //items.add(new Item("Sulfuras, Hand of Ragnaros", 0, 80));
-    items.add(new ItemSulfuraHOR(0, 80));
-    items.add(new ItemBackstagePass(15, 20));
-    //items.add(new Item("Conjured Mana Cake", 0, 3));
-    items.add(new ItemConjuredManaCake(0, 3));
+    items.add(new Item("Sulfuras, Hand of Ragnaros", 0, 80));
+    items.add(new Item("Backstage passes to a TAFKAL80ETC concert",15, 20));
+    items.add(new Item("Conjured Mana Cake", 0, 3));
 
     updateQuality();
 

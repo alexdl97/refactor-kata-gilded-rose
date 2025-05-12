@@ -1,5 +1,6 @@
 package edu.alenasoft;
 
+import edu.alenasoft.factory.QualityUpdaterFactory;
 import edu.alenasoft.strategy.QualityUpdater;
 
 public class Item {
@@ -9,11 +10,11 @@ public class Item {
   public int quality;
   public QualityUpdater qualityUpdater;
 
-  public Item(String name, int sellIn, int quality, QualityUpdater qualityUpdater) {
+  public Item(String name, int sellIn, int quality) {
     this.setName(name);
     this.setSellIn(sellIn);
     this.setQuality(quality);
-    this.qualityUpdater = qualityUpdater;
+    this.qualityUpdater = QualityUpdaterFactory.getUpdaterFor(name);
   }
 
   /* Generated getter and setter code */
@@ -52,6 +53,7 @@ public class Item {
   }
 
   public void updateQuality() {
+    System.out.println("Updating quality of " + this.name);
     if (this.qualityUpdater != null) {
       this.qualityUpdater.update(this);
     }

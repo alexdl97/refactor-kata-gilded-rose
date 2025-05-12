@@ -2,7 +2,9 @@ package edu.alenasoft.strategy;
 
 import edu.alenasoft.Item;
 
-public class ItemConjuredManaCakeUpdater implements QualityUpdater {
+public class ConjuredManaCakeUpdater implements QualityUpdater {
+
+    public ConjuredManaCakeUpdater() {}
 
     @Override
     public void update(Item item) {

@@ -2,7 +2,9 @@ package edu.alenasoft.strategy;
 
 import edu.alenasoft.Item;
 
-public class ItemBackstagePassUpdater implements QualityUpdater {
+public class BackstagePassUpdater implements QualityUpdater {
+
+    public BackstagePassUpdater() {}
 
     @Override
     public void update(Item item) {

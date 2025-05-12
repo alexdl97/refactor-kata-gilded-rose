@@ -2,7 +2,9 @@ package edu.alenasoft.strategy;
 
 import edu.alenasoft.Item;
 
-public class ItemDexterityVestUpdater implements QualityUpdater {
+public class DexterityVestUpdater implements QualityUpdater {
+
+    public DexterityVestUpdater() {}
 
     @Override
     public void update(Item item) {
