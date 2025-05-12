@@ -49,7 +49,7 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 0;
-    Item item = new Item("+5 Dexterity Vest", 0, inputQuality);
+    Item item = new ItemDexterityVest( 0, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
