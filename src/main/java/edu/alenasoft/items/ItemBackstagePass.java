@@ -10,6 +10,7 @@ public class ItemBackstagePass extends Item {
 
     @Override
     public void updateQuality() {
+        super.updateQuality();
         if (this.getQuality() < 50) {
             this.setQuality(this.getQuality() + 1);
             if (this.getSellIn() < 11 && this.getQuality() < 50) {

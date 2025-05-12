@@ -10,6 +10,7 @@ public class ItemConjuredManaCake extends Item {
 
     @Override
     public void updateQuality() {
+        super.updateQuality();
         if (this.getQuality() > 0) {
             this.setQuality(this.getQuality() - 1);
         }

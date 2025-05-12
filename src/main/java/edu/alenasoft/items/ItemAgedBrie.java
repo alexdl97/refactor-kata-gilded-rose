@@ -10,6 +10,7 @@ public class ItemAgedBrie extends Item {
 
     @Override
     public void updateQuality() {
+        super.updateQuality();
         if (this.getQuality() > 50) {
             this.setQuality(this.getQuality() + 1);
         }

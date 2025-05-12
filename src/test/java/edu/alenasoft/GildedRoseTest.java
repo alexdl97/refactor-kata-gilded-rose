@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import edu.alenasoft.items.ItemAgedBrie;
 import edu.alenasoft.items.ItemBackstagePass;
+import edu.alenasoft.items.ItemDexterityVest;
 import edu.alenasoft.items.ItemSulfuraHOR;
 
 public class GildedRoseTest {
@@ -16,14 +17,15 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 20;
-    Item item = new Item("+5 Dexterity Vest", 10, inputQuality);
+    //Item item = new Item("+5 Dexterity Vest", 10, inputQuality);
+    Item item = new ItemDexterityVest(10, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
 
     int expectedQuality = inputQuality - 1;
 
-    // assertEquals(expectedQuality, item.getQuality());
+    assertEquals(expectedQuality, item.getQuality());
   }
 
   @Test
@@ -31,14 +33,15 @@ public class GildedRoseTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 20;
-    Item item = new Item("+5 Dexterity Vest", 0, inputQuality);
+    //Item item = new Item("+5 Dexterity Vest", 0, inputQuality);
+    Item item = new ItemDexterityVest(0, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
 
     int expectedQuality = inputQuality - 2;
 
-    // assertEquals(expectedQuality, item.getQuality());
+    assertEquals(expectedQuality, item.getQuality());
   }
 
   @Test
