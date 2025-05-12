@@ -2,6 +2,8 @@ package edu.alenasoft;
 
 import org.junit.Test;
 
+import edu.alenasoft.items.ItemConjuredManaCake;
+
 import static org.junit.Assert.*;
 import java.util.ArrayList;
 
@@ -12,7 +14,8 @@ public class GildedRoseNewItemTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 20;
-    Item item = new Item("Conjured Mana Cake", 15, inputQuality);
+//    Item item = new Item("Conjured Mana Cake", 15, inputQuality);
+    Item item = new ItemConjuredManaCake(15, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
@@ -27,7 +30,8 @@ public class GildedRoseNewItemTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 0;
-    Item item = new Item("Conjured Mana Cake", 15, inputQuality);
+    //Item item = new Item("Conjured Mana Cake", 15, inputQuality);
+    Item item = new ItemConjuredManaCake(15, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
@@ -42,7 +46,8 @@ public class GildedRoseNewItemTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 1;
-    Item item = new Item("Conjured Mana Cake", 15, inputQuality);
+    //Item item = new Item("Conjured Mana Cake", 15, inputQuality);
+    Item item = new ItemConjuredManaCake(15, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
@@ -58,7 +63,8 @@ public class GildedRoseNewItemTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 10;
-    Item item = new Item("Conjured Mana Cake", 0, inputQuality);
+    //Item item = new Item("Conjured Mana Cake", 0, inputQuality);
+    Item item = new ItemConjuredManaCake(0, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
@@ -73,7 +79,8 @@ public class GildedRoseNewItemTest {
     // Contexto
     GildedRose.items = new ArrayList<>();
     int inputQuality = 3;
-    Item item = new Item("Conjured Mana Cake", 0, inputQuality);
+    //Item item = new Item("Conjured Mana Cake", 0, inputQuality);
+    Item item = new ItemConjuredManaCake(0, inputQuality);
 
     GildedRose.items.add(item);
     GildedRose.updateQuality();
